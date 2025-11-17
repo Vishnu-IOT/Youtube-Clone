@@ -1,0 +1,334 @@
+/* ======================================================================
+   HOME SECTION
+   ====================================================================== */
+.collaspe {
+    display: flex;
+}
+
+.sidediv {
+    position: fixed;
+    top: 8vh;
+    height: 100%;
+    font-size: 18px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    z-index: 2;
+}
+
+.sidebar {
+    width: 220px;
+}
+
+.menu1{
+    height: 50px;
+}
+
+.para {
+    /* border-style: dashed; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 6vh;
+    padding: 6px;
+}
+
+
+/* In Videosection */
+.sideicon {
+    position: fixed;
+    top: 8vh;
+    height: 100%;
+    width: 60px;
+    font-size: 18px;
+    overflow-y: auto;
+    z-index: 1;
+    justify-content: center;
+    left: 0;
+}
+
+/* ======================================================================
+   VIDEO SECTION
+   ====================================================================== */
+.videosec {
+    position: relative;
+    top: 10vh;
+    height: 100%;
+}
+
+.marqueediv {
+    position: fixed;
+    width: 100%;
+    top: 8vh;
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: black;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.marqueediv p {
+    background-color: rgba(141, 154, 165, 0.577);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.imagediv {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    top: 8vh;
+}
+
+.mapdiv {
+    width: 400px;
+    height: max-content;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mapdiv img {
+    position: relative;
+    top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 300px;
+    width: 380px;
+}
+
+.mapdiv:hover {
+    background-color: rgba(65, 69, 72, 0.859);
+    transition: background ease-in 0.3s;
+}
+
+.mapp {
+    display: flex;
+    justify-content: space-around;
+    width: 98%;
+    max-height: fit-content;
+    gap: 20px;
+    position: relative;
+    bottom: 1vh;
+    flex-direction: row;
+    flex: 2;
+}
+
+.imgtag img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+/* ======================================================================
+   VIEWPAGE SECTION
+   ====================================================================== */
+.maindiv {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 98%;
+    height: 100%;
+    top: 10vh;
+    left: 4vh;
+}
+
+
+.mainsec1 {
+    width: 60%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 {
+    /* border-style: solid; */
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.div1 h1,
+.div1 h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.channeltitle {
+    display: flex;
+    width: 100%;
+}
+
+.ct1 {
+    display: flex;
+    width: 49%;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+.ct2 {
+    display: flex;
+    width: 55%;
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+}
+
+.description {
+    white-space: pre-line;
+    border-radius: 20px;
+    background-color: #272727;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.mainimg {
+    border-radius: 20px;
+    width: 100%;
+    height: 75vh;
+}
+
+.mainsec2 {
+    width: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.div2 {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+.sideimg {
+    max-height: fit-content;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.thumbimg {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.ctdiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ctptag {
+    font-size: 13px;
+    color: #979696;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.dark {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 8vh;
+    left: 0;
+    background-color: #04040469;
+    z-index: 1;
+}
+
+/* ======================================================================
+   MOBILE RESPONSIVE
+   ====================================================================== */
+
+@media screen and (max-width:430px) {
+
+    .sidebar,
+    .sidediv {
+        display: none;
+    }
+
+    .videosec {
+        width: 100%;
+        position: relative;
+        left: 0px !important;
+        margin-top: 10px;
+        margin-bottom: 160px;
+    }
+
+    .marqueediv {
+        left: 0 !important;
+    }
+
+    /* viewpage */
+
+    .maindiv {
+        width: 100%;
+        justify-content: stretch;
+        display: block;
+        gap: 0px;
+        left: 0 !important;
+    }
+
+    .mainsec1 {
+        justify-content: start;
+        left: 0px !important;
+        width: 100%;
+    }
+
+    .mainimg,
+    .thumbimg {
+        width: 100%;
+        height: 300px;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .description {
+        border-radius: 0px;
+    }
+
+    .channeltitle {
+        display: none;
+    }
+
+    .mainsec2 {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .div2 {
+        width: 100%;
+    }
+
+    .sideimg {
+        width: 100%;
+        display: block;
+    }
+
+    .dark {
+        display: none !important;
+    }
+
+}

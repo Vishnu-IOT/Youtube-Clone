@@ -1,0 +1,17 @@
+.footersec {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    height: 8vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:430px) {
+    .footersec {
+        display: flex;
+    }
+}
